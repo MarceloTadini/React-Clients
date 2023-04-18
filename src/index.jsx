@@ -6,6 +6,7 @@ import {
     createBrowserRouter,
     RouterProvider,
 } from "react-router-dom"
+import Users from "./pages/Users";
 
 const router = createBrowserRouter([
     {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
         element: <App/>,
         errorElement: <ErrorPage/>
     },
+    {
+        path: "/users",
+        element: <Users/>,
+    }
 ])
 
 ReactDOM.render(
