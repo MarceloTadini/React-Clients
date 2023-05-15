@@ -12,7 +12,7 @@
 
 ## :rocket: Como executar 
 * Clone o repositório:
-```` git clone https://github.com/MarceloTadini/React-Api.git ````
+```` git clone https://github.com/MarceloTadini/React-Clients.git ````
 * Instale as dependências: ```` npm install ````
 * Inicie o servidor: ```` npm start ````
 * Acesse o localhost no seu navegador.
