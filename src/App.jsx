@@ -1,15 +1,13 @@
-import React from "react";
-import Header from "./partials/Header/Header";
-
+import TemplateDefault from "./templates/TemplateDefault";
 
 function App() {
     return (
-        <>
-            <Header/>
+        <TemplateDefault>
             <ul>
                 <li><a href="/users">Usuários</a></li>
             </ul>
-        </>
+        </TemplateDefault>
+                
     )
 }
 
