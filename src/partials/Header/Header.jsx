@@ -21,16 +21,16 @@ function Header() {
                     <IconButton
                         size="large"
                         edge="start"
-                        color="inherit"
+                        color="secondary"
                         aria-label="menu"
                         sx={{ mr: 2 }}
                     >
                         <MenuIcon />
                     </IconButton>
-                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} color="secondary">
                         News
                     </Typography>
-                    <Button color="inherit">Login</Button>
+                    <Button color="secondary">Login</Button>
                 </Toolbar>
             </AppBar>
         </Box>
