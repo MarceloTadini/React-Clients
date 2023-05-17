@@ -1,6 +1,5 @@
 import TemplateDefault from "./templates/TemplateDefault";
 
-
 function App() {
     return (
         <TemplateDefault>

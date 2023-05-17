@@ -1,16 +1,36 @@
-import React from "react";
-import { Button } from "@mui/material";
-import {TextField} from "@mui/material";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import CustomersCard from "../components/CustomerCard";
 
 function Users() {
+
+    const [customers, setCustomers] = useState([])
+    console.log(customers)
+
+    useEffect(() => {
+        axios.get('https://reqres.in/api/users')
+            .then(response => {
+                const { data } = response.data
+                setCustomers(data)
+            })
+    }, [])
     return (
         <>
             <h1>Usuários</h1>
-            <ul>
-                <li><a href="/">Home</a></li>
-            </ul>
-            <Button variant="contained" color="primary">Teste</Button>
-            <TextField required id="standard-required" label="Required" defaultValue="Teste"></TextField>
+
+            <li><a href="/">Home</a></li>
+
+            {
+                customers.map(item => (
+                    <CustomersCard
+                        name={item.first_name}
+                        lastName={item.last_name}
+                        email={item.email}
+                        avatar={item.avatar}
+                    />
+                ))
+            }
+
         </>
     );
 }
