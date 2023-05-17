@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import CustomersCard from "../components/CustomerCard";
+import Header from "../partials/Header/Header";
 
 function Users() {
 
@@ -16,6 +17,7 @@ function Users() {
     }, [])
     return (
         <>
+            <Header/>
             <h1>Usuários</h1>
 
             <li><a href="/">Home</a></li>
