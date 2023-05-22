@@ -52,11 +52,11 @@ function Header() {
                 <List>
                     <ListItem button>
                         <ListItemIcon><HomeIcon/></ListItemIcon>
-                        <ListItemText><a href="/users">Home</a></ListItemText>
+                        <ListItemText><a href="/">Home</a></ListItemText>
                     </ListItem>
                     <ListItem button>
                         <ListItemIcon><PersonAddIcon/></ListItemIcon>
-                        <ListItemText><a href="/">Cadastro de Clientes</a></ListItemText>
+                        <ListItemText><a href="/users">Cadastro de Clientes</a></ListItemText>
                     </ListItem>
                 </List>
             </Drawer>
