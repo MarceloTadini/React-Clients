@@ -4,7 +4,7 @@ function App() {
     return (
         <TemplateDefault>
             <ul>
-                <li><a href="/users">Usuários</a></li>
+                <li>Inicial</li>
             </ul>
         </TemplateDefault>
                 

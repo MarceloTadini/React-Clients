@@ -20,8 +20,6 @@ function Users() {
             <Header/>
             <h1>Usuários</h1>
 
-            <li><a href="/">Home</a></li>
-
             {
                 customers.map(item => (
                     <CustomersCard
