@@ -5,6 +5,10 @@ import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
+import EditIcon from '@mui/icons-material/Edit';
+import DeleteIcon from '@mui/icons-material/Delete';
+
+
 import { red } from '@mui/material/colors';
 
 
@@ -19,13 +23,17 @@ function CustomersCard({name, lastName, email, avatar}) {
         }
         title={name}
         subheader={lastName}
-      />
+      >
+        
+      </CardHeader>
       <CardMedia
         component="img"
         height="194"
         src={avatar}
         alt="Paella dish"
       />
+      <EditIcon button/>
+      <DeleteIcon button/>
       <CardContent>
         <Typography variant="body2" color="text.secondary">
           {email}
