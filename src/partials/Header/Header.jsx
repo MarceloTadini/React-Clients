@@ -17,6 +17,8 @@ import {
 import MenuIcon from '@mui/icons-material/Menu';
 import HomeIcon from '@mui/icons-material/Home';
 import PersonAddIcon from '@mui/icons-material/Person';
+import LoginIcon from '@mui/icons-material/Login';
+
 import { useState } from 'react';
 
 
@@ -57,6 +59,10 @@ function Header() {
                     <ListItem button>
                         <ListItemIcon><PersonAddIcon/></ListItemIcon>
                         <ListItemText><a href="/users">Cadastro de Clientes</a></ListItemText>
+                    </ListItem>
+                    <ListItem button>
+                        <ListItemIcon><LoginIcon/></ListItemIcon>
+                        <ListItemText><a href="/login">Login</a></ListItemText>
                     </ListItem>
                 </List>
             </Drawer>
