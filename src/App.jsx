@@ -3,9 +3,7 @@ import TemplateDefault from "./templates/TemplateDefault";
 function App() {
     return (
         <TemplateDefault>
-            <ul>
-                <li>Inicial</li>
-            </ul>
+            <h1>Home</h1>
         </TemplateDefault>
                 
     )
