@@ -1,7 +1,10 @@
+import Header from "../partials/Header/Header"
+
 function Login(){
     return(
         <>  
-        oi
+            <Header/>
+            <h2>Login</h2>
         </>
     )
 }

@@ -47,7 +47,7 @@ function Header() {
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} color="secondary">
                         News
                     </Typography>
-                    <Button color="secondary">Login</Button>
+                    <Button color="secondary"> <a href="/login">Login</a></Button>
                 </Toolbar>
             </AppBar>
             <Drawer open={menuOpen} onClose={handleToggleMenu}>

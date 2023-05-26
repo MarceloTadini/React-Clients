@@ -10,6 +10,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 import Users from "./pages/Users";
 import './index.css'
+import Login from "./pages/Login";
 
 const theme = createTheme({
     palette: {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
     {
         path: "/users",
         element: <Users/>,
+    },
+    {
+        path: "/login",
+        element: <Login/>,
     }
 ])
 
