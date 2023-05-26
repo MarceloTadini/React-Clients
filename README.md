@@ -4,7 +4,7 @@
 ## :mag_right: Conceitos Utilizados
 * React Hooks: useEffect e UseState;
 * Conexão com a API remota;
-* Bibliotecas: React Router Dom
+* Bibliotecas: React Router Dom, Material Ui
 
 ##  :video_game: Tecnologias Utilizadas 
 * JavaScript;
