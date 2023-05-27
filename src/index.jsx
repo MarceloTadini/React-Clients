@@ -12,6 +12,8 @@ import Users from "./pages/Users";
 import './index.css'
 import Login from "./pages/Login";
 
+import { AuthProvider } from "./state/auth";
+
 const theme = createTheme({
     palette: {
       primary: {
@@ -41,9 +43,11 @@ const router = createBrowserRouter([
 
 ReactDOM.render(
     <React.StrictMode>
-        <ThemeProvider theme={theme}>
-            <RouterProvider router={router} />
-        </ThemeProvider>
+        <AuthProvider>
+            <ThemeProvider theme={theme}>
+                <RouterProvider router={router} />
+            </ThemeProvider>
+        </AuthProvider>
     </React.StrictMode>,
     document.getElementById('root')
 )

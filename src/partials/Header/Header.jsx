@@ -22,7 +22,7 @@ import LoginIcon from '@mui/icons-material/Login';
 import { useState } from 'react';
 
 
-function Header() {
+function Header({user}) {
 
     const [menuOpen, setMenuOpen] = useState(false)
 
@@ -47,7 +47,11 @@ function Header() {
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} color="secondary">
                         News
                     </Typography>
-                    <Button color="secondary"> <a href="/login">Login</a></Button>
+                    {
+                     user.logged 
+                        ?  <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} color="secondary">{user.email}</Typography>
+                        :   <Button color="secondary"> <a href="/login">Login</a></Button>
+                    }
                 </Toolbar>
             </AppBar>
             <Drawer open={menuOpen} onClose={handleToggleMenu}>
